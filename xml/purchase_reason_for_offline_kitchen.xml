@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Table>
+	<Row varName="purchase_reason_for_offline_kitchen_1" varLabel="">
+		<ID>1000</ID>
+		<Title>Price was right</Title>
+		<Value>1</Value>
+		<Status>00</Status>
+	</Row>
+	<Row varName="purchase_reason_for_offline_kitchen_2" varLabel="">
+    	<ID>1001</ID>
+    	<Title>Assurance of quality</Title>
+    	<Value>2</Value>
+    	<Status>00</Status>
+ 	</Row>
+ 	<Row varName="purchase_reason_for_offline_kitchen_3" varLabel="">
+    	<ID>1002</ID>
+    	<Title>Staff is helpful</Title>
+    	<Value>3</Value>
+    	<Status>00</Status>
+ 	</Row>  
+    <Row varName="purchase_reason_for_offline_kitchen_4" varLabel="">
+        <ID>1004</ID>
+        <Title>Wide range of products</Title>
+        <Value>4</Value>
+        <Status>00</Status>
+    </Row>
+    <Row varName="purchase_reason_for_offline_kitchen_5" varLabel="">
+        <ID>1005</ID>
+        <Title>Store experience is great</Title>
+        <Value>5</Value>
+        <Status>00</Status>
+    </Row>
+     <Row varName="purchase_reason_for_offline_kitchen_6" varLabel="">
+        <ID>1006</ID>
+        <Title>It’s a retailer I trust</Title>
+        <Value>6</Value>
+        <Status>00</Status>
+    </Row>
+
+     <Row varName="purchase_reason_for_offline_kitchen_7" varLabel="">
+        <ID>1007</ID>
+        <Title>It has a good exchange policy</Title>
+        <Value>7</Value>
+        <Status>00</Status>
+    </Row>
+
+     <Row varName="purchase_reason_for_offline_kitchen_8" varLabel="">
+        <ID>1008</ID>
+        <Title>It is convenient</Title>
+        <Value>8</Value>
+        <Status>00</Status>
+    </Row>
+
+     <Row varName="purchase_reason_for_offline_kitchen_9" varLabel="">
+        <ID>1009</ID>
+        <Title>It is close to my house</Title>
+        <Value>9</Value>
+        <Status>00</Status>
+    </Row>
+
+     <Row varName="purchase_reason_for_offline_kitchen_10" varLabel="">
+        <ID>1010</ID>
+        <Title>Others</Title>
+        <Value>10</Value>
+        <Status>00</Status>
+    </Row>      
+</Table>

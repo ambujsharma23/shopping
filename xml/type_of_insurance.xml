@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Table>
+  <Row>
+    <ID>1000</ID>
+    <Title>Life Insurance cover</Title>
+    <Value>1</Value>
+    <Status>00</Status>
+  </Row>
+  <Row>
+    <ID>1001</ID>
+    <Title>Health Insurance cover</Title>
+    <Value>2</Value>
+    <Status>00</Status>
+  </Row>
+  <Row>
+    <ID>1002</ID>
+    <Title>Property Insurance</Title>
+    <Value>3</Value>
+    <Status>00</Status>
+  </Row>
+  <Row>
+    <ID>1003</ID>
+    <Title>Vehicle Insurance</Title>
+    <Value>4</Value>
+    <Status>00</Status>
+  </Row>
+</Table>

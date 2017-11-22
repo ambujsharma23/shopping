@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Table>
+
+    <Row varName="mode_of_payment1" varLabel="">
+        <ID>1000</ID>
+        <Title>Cash</Title>
+        <Value>1</Value>
+        <Status>00</Status>
+    </Row>
+
+    <Row varName="mode_of_payment2" varLabel="">
+        <ID>1001</ID>
+        <Title>Debit card</Title>
+        <Value>2</Value>
+        <Status>00</Status>
+    </Row>
+
+    <Row varName="mode_of_payment3" varLabel="">
+
+        <ID>1002</ID>
+        <Title>Credit Card</Title>
+        <Value>3</Value>
+        <Status>00</Status>
+    </Row>
+    <Row varName="mode_of_payment4" varLabel="">
+
+        <ID>1002</ID>
+        <Title>Netbanking</Title>
+        <Value>4</Value>
+        <Status>00</Status>
+    </Row>
+
+    <Row varName="mode_of_payment5" varLabel="">
+
+        <ID>1002</ID>
+        <Title>Mobile Wallet (like PayTM, MobiKwik,Citrus Pay, PayUMoney, etc.)</Title>
+        <Value>5</Value>
+        <Status>00</Status>
+    </Row>
+
+    <Row varName="mode_of_payment6" varLabel="">
+
+        <ID>1002</ID>
+        <Title>Reward Points</Title>
+        <Value>6</Value>
+        <Status>00</Status>
+    </Row>
+        
+<Row varName="mode_of_payment7" varLabel="">
+
+        <ID>1002</ID>
+        <Title>Gift Card/ Gift Vouchers </Title>
+        <Value>7</Value>
+        <Status>00</Status>
+    </Row>
+    
+    <Row varName="mode_of_payment8" varLabel="">
+
+        <ID>1002</ID>
+        <Title>Other </Title>
+        <Value>8</Value>
+        <Status>00</Status>
+    </Row>
+
+</Table>

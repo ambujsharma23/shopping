@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Table>
+	<Row>
+		<ID>1000</ID>
+		<Title>Yes</Title>
+		<Value>1</Value>
+		<Status>00</Status>
+		<Edit_Date>11/25/2008 1:01:28 PM</Edit_Date>
+	</Row>
+	<Row>
+		<ID>1001</ID>
+		<Title>No</Title>
+		<Value>2</Value>
+		<Status>00</Status>
+		<Edit_Date>11/25/2008 1:01:28 PM</Edit_Date>
+	</Row>
+		</Table>

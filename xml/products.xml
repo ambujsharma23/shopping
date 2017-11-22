@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Table>
+	<Row varName="buy_product_1" varLabel="">
+		<ID>1000</ID>
+		<Title>Tablet</Title>
+		<Value>1</Value>
+		<Status>00</Status>
+	</Row>
+	<Row varName="buy_product_2" varLabel="">
+    	<ID>1001</ID>
+    	<Title>Laptop, Computer (Desktop)</Title>
+    	<Value>2</Value>
+    	<Status>00</Status>
+ 	</Row>
+ 	<Row varName="buy_product_3" varLabel="">
+    	<ID>1002</ID>
+    	<Title>Mobile Phone</Title>
+    	<Value>3</Value>
+    	<Status>00</Status>
+ 	</Row>
+ 	<Row varName="buy_product_4" varLabel="">
+    	<ID>1003</ID>
+    	<Title>Television (LCD/LED/3D)</Title>
+    	<Value>4</Value>
+    	<Status>00</Status>
+ 	</Row>
+ 	<Row varName="buy_product_5" varLabel="">
+    	<ID>1004</ID>
+    	<Title>Kitchen Appliances (Microwave, Mixer, Juicer, Water Purifier, Air Fryer, etc)</Title>
+    	<Value>5</Value>
+    	<Status>00</Status>
+ 	</Row>
+ 	<Row varName="buy_product_6" varLabel="">
+    	<ID>1005</ID>
+    	<Title>Large Appliances (Refrigerator, Air Conditioning (AC),Washing Machine )</Title>
+    	<Value>6</Value>
+    	<Status>00</Status>
+ 	</Row>
+    <Row varName="buy_product_9" varLabel="">
+        <ID>1008</ID>
+        <Title>Personal Care Appliances (Electric shavers, Trimmers, Hair Dryers, etc.)</Title>
+        <Value>9</Value>
+        <Status>00</Status>
+    </Row>
+ 	<Row varName="buy_product_7" varLabel="">
+    	<ID>1006</ID>
+    	<Title>No, I didn’t look for any product</Title>
+    	<Value>98</Value>
+    	<Status>00</Status>
+ 	</Row>
+ 	<Row varName="buy_product_8" varLabel="">
+    	<ID>1007</ID>
+    	<Title>Other</Title>
+    	<Value>8</Value>
+    	<Status>00</Status>
+ 	</Row>
+</Table>

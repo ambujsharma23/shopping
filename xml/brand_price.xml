@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Table>
+	<Row>
+		<ID>1000</ID>
+		<Title>Less than Rs. 5000</Title>
+		<Value>1</Value>
+		<Status>00</Status>
+	</Row>
+	<Row>
+    	<ID>1001</ID>
+    	<Title>Rs. 5001 to Rs. 10000</Title>
+    	<Value>2</Value>
+    	<Status>00</Status>
+ 	</Row>
+ 	<Row>
+    	<ID>1002</ID>
+    	<Title>Rs. 10001 to Rs. 15000</Title>
+    	<Value>3</Value>
+    	<Status>00</Status>
+ 	</Row>
+    <Row>
+        <ID>1003</ID>
+        <Title>Rs, 15001 to Rs. 20000</Title>
+        <Value>4</Value>
+        <Status>00</Status>
+    </Row>
+    <Row>
+        <ID>1004</ID>
+        <Title>Rs. 20001 to Rs. 25000</Title>
+        <Value>5</Value>
+        <Status>00</Status>
+    </Row>
+	 <Row>
+        <ID>1004</ID>
+        <Title>Rs. 25001 to Rs. 30000</Title>
+        <Value>6</Value>
+        <Status>00</Status>
+    </Row>
+    <Row>
+        <ID>1005</ID>
+        <Title>Rs. 30001 to Rs. 35000</Title>
+        <Value>7</Value>
+        <Status>00</Status>
+    </Row>
+	    <Row>
+        <ID>1005</ID>
+        <Title>Rs. 35001 to Rs. 40000</Title>
+        <Value>8</Value>
+        <Status>00</Status>
+    </Row>
+    <Row>
+        <ID>1006</ID>
+        <Title>Rs. 40001 to Rs. 50000</Title>
+        <Value>9</Value>
+        <Status>00</Status>
+    </Row>
+    <Row>
+        <ID>1007</ID>
+        <Title>Rs. 50001 to Rs. 75000</Title>
+        <Value>10</Value>
+        <Status>00</Status>
+    </Row>
+    <Row>
+        <ID>1008</ID>
+        <Title>More than Rs. 75000</Title>
+        <Value>11</Value>
+        <Status>00</Status>
+    </Row>
+    
+ 
+</Table>

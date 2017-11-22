@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Table>
+	<Row varName="stores_retailers_1" varLabel="">
+    	<ID>1000</ID>
+    	<Title>Reliance Digital</Title>
+    	<Value>1</Value>
+    	<Status>00</Status>
+ 	</Row>
+ 	<Row varName="stores_retailers_2" varLabel="">
+    	<ID>1001</ID>
+    	<Title>Croma</Title>
+    	<Value>2</Value>
+    	<Status>00</Status>
+ 	</Row>
+ 	<Row varName="stores_retailers_3" varLabel="">
+    	<ID>1002</ID>
+    	<Title>Ezone</Title>
+    	<Value>3</Value>
+    	<Status>00</Status>
+ 	</Row>
+ 	<Row varName="stores_retailers_4" varLabel="">
+    	<ID>1003</ID>
+    	<Title>Vijay Sales</Title>
+    	<Value>4</Value>
+    	<Status>00</Status>
+ 	</Row>
+ 	<Row varName="stores_retailers_5" varLabel="">
+    	<ID>1004</ID>
+    	<Title>Sargam</Title>
+    	<Value>5</Value>
+    	<Status>00</Status>
+ 	</Row>
+ 	<Row varName="stores_retailers_6" varLabel="">
+    	<ID>1005</ID>
+    	<Title>Vivek</Title>
+    	<Value>6</Value>
+    	<Status>00</Status>
+ 	</Row>
+ 	<Row varName="stores_retailers_7" varLabel="">
+    	<ID>1006</ID>
+    	<Title>Flipkart.com</Title>
+    	<Value>7</Value>
+    	<Status>00</Status>
+ 	</Row>
+    <Row varName="stores_retailers_8" varLabel="">
+        <ID>1007</ID>
+        <Title>Amazon.in</Title>
+        <Value>8</Value>
+        <Status>00</Status>
+    </Row>
+    <Row varName="stores_retailers_9" varLabel="">
+        <ID>1008</ID>
+        <Title>Pai</Title>
+        <Value>9</Value>
+        <Status>00</Status>
+    </Row>
+    <Row varName="stores_retailers_10" varLabel="">
+        <ID>1009</ID>
+        <Title>Girias</Title>
+        <Value>10</Value>
+        <Status>00</Status>
+    </Row>
+    <Row varName="stores_retailers_11" varLabel="">
+        <ID>1010</ID>
+        <Title>Snapdeal</Title>
+        <Value>11</Value>
+        <Status>00</Status>
+    </Row>
+    <Row varName="stores_retailers_12" varLabel="">
+        <ID>1011</ID>
+        <Title>Shopclues</Title>
+        <Value>12</Value>
+        <Status>00</Status>
+    </Row>
+    <Row varName="stores_retailers_13" varLabel="">
+        <ID>1012</ID>
+        <Title>Croma.com</Title>
+        <Value>13</Value>
+        <Status>00</Status>
+    </Row>
+     <Row varName="stores_retailers_14" varLabel="">
+        <ID>1013</ID>
+        <Title>Vijaysales.com</Title>
+        <Value>14</Value>
+        <Status>00</Status>
+    </Row>
+
+     <Row varName="stores_retailers_19" varLabel="">
+        <ID>1019</ID>
+        <Title>PayTM</Title>
+        <Value>19</Value>
+        <Status>00</Status>
+    </Row>
+
+
+     <Row varName="stores_retailers_15" varLabel="">
+        <ID>1014</ID>
+        <Title>Company’s exclusive showroom</Title>
+        <Value>15</Value>
+        <Status>00</Status>
+    </Row>
+    <Row varName="stores_retailers_16" varLabel="">
+        <ID>1015</ID>
+        <Title>Others</Title>
+        <Value>16</Value>
+        <Status>00</Status>
+    </Row>
+    <Row varName="stores_retailers_17" varLabel="">
+        <ID>1017</ID>
+        <Title>Didn't visit any</Title>
+        <Value>17</Value>
+        <Status>00</Status>
+    </Row>
+    <Row varName="stores_retailers_18" varLabel="">
+        <ID>1018</ID>
+        <Title>None of the above</Title>
+        <Value>98</Value>
+        <Status>00</Status>
+    </Row>
+</Table>

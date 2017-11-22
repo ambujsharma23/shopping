@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Table>
+  <Row>
+    <ID>1000</ID>
+    <Title>Within 2 weeks</Title>
+    <Value>1</Value>
+    <Status>00</Status>
+  </Row>
+  <Row>
+    <ID>1001</ID>
+    <Title>2 weeks to 1 month</Title>
+    <Value>2</Value>
+    <Status>00</Status>
+  </Row>
+  <Row>
+    <ID>1002</ID>
+    <Title>1 month to 6 months</Title>
+    <Value>3</Value>
+    <Status>00</Status>
+  </Row>
+  <Row>
+    <ID>1003</ID>
+    <Title>6 months to 1 year</Title>
+    <Value>4</Value>
+    <Status>00</Status>
+  </Row>
+  <Row>
+    <ID>1004</ID>
+    <Title>1 year to 2 years</Title>
+    <Value>5</Value>
+    <Status>00</Status>
+  </Row>
+  <Row>
+    <ID>1005</ID>
+    <Title>2 years to 5 years</Title>
+    <Value>6</Value>
+    <Status>00</Status>
+  </Row>
+  <Row>
+    <ID>1006</ID>
+    <Title>More than 5 Years</Title>
+    <Value>7</Value>
+    <Status>00</Status>
+  </Row>
+</Table>

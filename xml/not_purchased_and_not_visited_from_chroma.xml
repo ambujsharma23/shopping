@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Table>
+	<Row varName="not_purchased_from_chroma_or_chromaretail_1" varLabel="">
+		<ID>1000</ID>
+		<Title>Store is too far</Title>
+		<Value>1</Value>
+		<Status>00</Status>
+	</Row>
+	<Row varName="not_purchased_from_chroma_or_chromaretail_2" varLabel="">
+    	<ID>1001</ID>
+    	<Title>Prices are usually too high</Title>
+    	<Value>2</Value>
+    	<Status>00</Status>
+ 	</Row>
+ 	<Row varName="not_purchased_from_chroma_or_chromaretail_3" varLabel="">
+    	<ID>1002</ID>
+    	<Title>Staff is usually not helpful</Title>
+    	<Value>3</Value>
+    	<Status>00</Status>
+ 	</Row>  
+    <Row varName="not_purchased_from_chroma_or_chromaretail_4" varLabel="">
+        <ID>1004</ID>
+        <Title>A wide range is not available</Title>
+        <Value>4</Value>
+        <Status>00</Status>
+    </Row>
+    <Row varName="not_purchased_from_chroma_or_chromaretail_5" varLabel="">
+        <ID>1005</ID>
+        <Title>Others</Title>
+        <Value>5</Value>
+        <Status>00</Status>
+    </Row>
+    
+</Table>

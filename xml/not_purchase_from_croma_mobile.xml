@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Table>
+    <Row varName="not_purchase_from_croma_mobile_1" varLabel="">
+        <ID>1000</ID>
+        <Title>The price was too high</Title>
+        <Value>1</Value>
+        <Status>00</Status>
+    </Row>
+    <Row varName="not_purchase_from_croma_mobile_2" varLabel="">
+        <ID>1001</ID>
+        <Title>The product that I was looking for was not available</Title>
+        <Value>2</Value>
+        <Status>00</Status>
+    </Row>
+    <Row varName="not_purchase_from_croma_mobile_3" varLabel="">
+        <ID>1002</ID>
+        <Title>I was looking for better offers / promotions</Title>
+        <Value>3</Value>
+        <Status>00</Status>
+    </Row>  
+    <Row varName="not_purchase_from_croma_mobile_4" varLabel="">
+        <ID>1004</ID>
+        <Title>I was getting a better deal elsewhere</Title>
+        <Value>4</Value>
+        <Status>00</Status>
+    </Row>
+    <Row varName="not_purchase_from_croma_mobile_5" varLabel="">
+        <ID>1005</ID>
+        <Title>The range of products was very limited </Title>
+        <Value>5</Value>
+        <Status>00</Status>
+    </Row>
+    
+    <Row varName="not_purchase_from_croma_mobile_6" varLabel="">
+        <ID>1005</ID>
+        <Title>The sales staff was not helpful</Title>
+        <Value>6</Value>
+        <Status>00</Status>
+    </Row>   
+    <Row varName="not_purchase_from_croma_mobile_7" varLabel="">
+        <ID>1005</ID>
+        <Title>I was not sure about the after sales service of the product that I was looking to buy</Title>
+        <Value>7</Value>
+        <Status>00</Status>
+    </Row> 
+    <Row varName="not_purchase_from_croma_mobile_8" varLabel="">
+        <ID>1005</ID>
+        <Title>Others</Title>
+        <Value>8</Value>
+        <Status>00</Status>
+    </Row>  
+</Table>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Table>
+	<Row>
+		<ID>1000</ID>
+		<Title>No Schooling completed</Title>
+		<Value>1</Value>
+		<Status>00</Status>
+	</Row>
+	<Row>
+    	<ID>1001</ID>
+    	<Title>School up to 4 years</Title>
+    	<Value>2</Value>
+    	<Status>00</Status>
+ 	</Row>
+ 	<Row>
+    	<ID>1002</ID>
+    	<Title>School 5 - 9 years</Title>
+    	<Value>3</Value>
+    	<Status>00</Status>
+ 	</Row>
+ 	<Row>
+    	<ID>1003</ID>
+    	<Title>SSC / HSC</Title>
+    	<Value>4</Value>
+    	<Status>00</Status>
+ 	</Row>
+ 	<Row>
+    	<ID>1004</ID>
+    	<Title>Some college but not graduate</Title>
+    	<Value>5</Value>
+    	<Status>00</Status>
+ 	</Row>
+ 	<Row>
+    	<ID>1005</ID>
+    	<Title>Graduate / Post graduate (General stream)</Title>
+    	<Value>6</Value>
+    	<Status>00</Status>
+ 	</Row>
+    <Row>
+        <ID>1006</ID>
+        <Title>Graduate / Post graduate (professional stream)</Title>
+        <Value>7</Value>
+        <Status>00</Status>
+    </Row>
+</Table>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Table>
+	<Row varName="future_purchase_from_croma_kitchen_1" varLabel="">
+		<ID>1000</ID>
+		<Title>Store is too far</Title>
+		<Value>1</Value>
+		<Status>00</Status>
+	</Row>
+	<Row varName="future_purchase_from_croma_kitchen_2" varLabel="">
+    	<ID>1001</ID>
+    	<Title>Prices are usually too high</Title>
+    	<Value>2</Value>
+    	<Status>00</Status>
+ 	</Row>
+ 	<Row varName="future_purchase_from_croma_kitchen_3" varLabel="">
+    	<ID>1002</ID>
+    	<Title>Staff was not helpful</Title>
+    	<Value>3</Value>
+    	<Status>00</Status>
+ 	</Row>  
+    <Row varName="future_purchase_from_croma_kitchen_4" varLabel="">
+        <ID>1004</ID>
+        <Title>Range not available</Title>
+        <Value>4</Value>
+        <Status>00</Status>
+    </Row>
+    <Row varName="future_purchase_from_croma_kitchen_5" varLabel="">
+        <ID>1005</ID>
+        <Title>Others </Title>
+        <Value>5</Value>
+        <Status>00</Status>
+    </Row>      
+</Table>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Table>
+	<Row varName="" varLabel="">
+    	<ID>1000</ID>
+    	<Title>Mobile Phone</Title>
+    	<Value>1</Value>
+    	<Status>00</Status>
+ 	</Row>
+ 	<Row varName="" varLabel="">
+    	<ID>1001</ID>
+    	<Title>Tablet</Title>
+    	<Value>2</Value>
+    	<Status>00</Status>
+ 	</Row>
+ 	<Row varName="" varLabel="">
+    	<ID>1002</ID>
+    	<Title>Desktop / Laptop</Title>
+    	<Value>3</Value>
+    	<Status>00</Status>
+ 	</Row>
+ 	
+    
+</Table>

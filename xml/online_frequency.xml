@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Table>
+	<Row varName="online_frequency1" varLabel="">
+    	<ID>1000</ID>
+    	<Title>Daily</Title>
+    	<Value>1</Value>
+    	<Status>00</Status>
+ 	</Row>
+ 	<Row varName="online_frequency2" varLabel="">
+    	<ID>1001</ID>
+    	<Title>Once in 3 days</Title>
+    	<Value>2</Value>
+    	<Status>00</Status>
+ 	</Row>
+ 	<Row varName="online_frequency3" varLabel="">
+    	<ID>1002</ID>
+    	<Title>Once in a week</Title>
+    	<Value>3</Value>
+    	<Status>00</Status>
+ 	</Row>
+ 	<Row varName="online_frequency4" varLabel="">
+    	<ID>1003</ID>
+    	<Title>Once in a fortnight</Title>
+    	<Value>4</Value>
+    	<Status>00</Status>
+ 	</Row>
+ 	<Row varName="online_frequency5" varLabel="">
+    	<ID>1004</ID>
+    	<Title>Once in a month</Title>
+    	<Value>5</Value>
+    	<Status>00</Status>
+ 	</Row>
+ 	<Row varName="online_frequency6" varLabel="">
+    	<ID>1005</ID>
+    	<Title>Once in 2-3 months</Title>
+    	<Value>6</Value>
+    	<Status>00</Status>
+ 	</Row>
+ 	<Row varName="online_frequency7" varLabel="">
+    	<ID>1006</ID>
+    	<Title>Once in 3-6 months</Title>
+    	<Value>7</Value>
+    	<Status>00</Status>
+ 	</Row>
+    <Row varName="online_frequency8" varLabel="">
+        <ID>1007</ID>
+        <Title>Less often</Title>
+        <Value>8</Value>
+        <Status>00</Status>
+    </Row>
+    
+</Table>

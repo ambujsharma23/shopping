@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Table>
+	<Row varName="purchase_product_from_croma_personel_care_1" varLabel="">
+		<ID>1000</ID>
+		<Title>Price is usually right</Title>
+		<Value>1</Value>
+		<Status>00</Status>
+	</Row>
+	<Row varName="purchase_product_from_croma_personel_care_2" varLabel="">
+    	<ID>1001</ID>
+    	<Title>Assurance of quality</Title>
+    	<Value>2</Value>
+    	<Status>00</Status>
+ 	</Row>
+ 	<Row varName="purchase_product_from_croma_personel_care_3" varLabel="">
+    	<ID>1002</ID>
+    	<Title>Staff is helpful</Title>
+    	<Value>3</Value>
+    	<Status>00</Status>
+ 	</Row>  
+    <Row varName="purchase_product_from_croma_personel_care_4" varLabel="">
+        <ID>1004</ID>
+        <Title>There is a wide range of products</Title>
+        <Value>4</Value>
+        <Status>00</Status>
+    </Row>
+    <Row varName="purchase_product_from_croma_personel_care_5" varLabel="">
+        <ID>1005</ID>
+        <Title>Store experience is great</Title>
+        <Value>5</Value>
+        <Status>00</Status>
+    </Row>      
+    <Row varName="purchase_product_from_croma_personel_care_6" varLabel="">
+        <ID>1006</ID>
+        <Title>It’s a retailer I trust</Title>
+        <Value>6</Value>
+        <Status>00</Status>
+    </Row>
+    <Row varName="purchase_product_from_croma_personel_care_7" varLabel="">
+        <ID>1007</ID>
+        <Title>Others</Title>
+        <Value>7</Value>
+        <Status>00</Status>
+    </Row>      
+</Table>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Table>
+	<Row varName="retailer_ads_98" varLabel="">
+		<ID>1000</ID>
+		<Title>No I didn’t see any ad</Title>
+		<Value>98</Value>
+		<Status>00</Status>
+	</Row>
+	<Row varName="retailer_ads_1" varLabel="">
+    	<ID>1001</ID>
+    	<Title>Reliance Digital</Title>
+    	<Value>1</Value>
+    	<Status>00</Status>
+ 	</Row>
+ 	<Row varName="retailer_ads_2" varLabel="">
+    	<ID>1002</ID>
+    	<Title>Croma</Title>
+    	<Value>2</Value>
+    	<Status>00</Status>
+ 	</Row>
+ 	<Row varName="retailer_ads_3" varLabel="">
+    	<ID>1003</ID>
+    	<Title>Ezone</Title>
+    	<Value>3</Value>
+    	<Status>00</Status>
+ 	</Row>
+ 	<Row varName="retailer_ads_4" varLabel="">
+    	<ID>1004</ID>
+    	<Title>Vijay Sales</Title>
+    	<Value>4</Value>
+    	<Status>00</Status>
+ 	</Row>
+ 	<Row varName="retailer_ads_5" varLabel="">
+    	<ID>1005</ID>
+    	<Title>Sargam</Title>
+    	<Value>5</Value>
+    	<Status>00</Status>
+ 	</Row>
+ 	<Row varName="retailer_ads_6" varLabel="">
+    	<ID>1006</ID>
+    	<Title>Vivek</Title>
+    	<Value>6</Value>
+    	<Status>00</Status>
+ 	</Row>
+ 	<Row varName="retailer_ads_7" varLabel="">
+    	<ID>1007</ID>
+    	<Title>Flipkart</Title>
+    	<Value>7</Value>
+    	<Status>00</Status>
+ 	</Row>
+    <Row varName="retailer_ads_8" varLabel="">
+        <ID>1008</ID>
+        <Title>Amazon</Title>
+        <Value>8</Value>
+        <Status>00</Status>
+    </Row>
+    <Row varName="retailer_ads_9" varLabel="">
+        <ID>1009</ID>
+        <Title>Pai</Title>
+        <Value>9</Value>
+        <Status>00</Status>
+    </Row>
+    <Row varName="retailer_ads_10" varLabel="">
+        <ID>1010</ID>
+        <Title>Girias</Title>
+        <Value>10</Value>
+        <Status>00</Status>
+    </Row>
+    <Row varName="retailer_ads_11" varLabel="">
+        <ID>1011</ID>
+        <Title>Snapdeal</Title>
+        <Value>11</Value>
+        <Status>00</Status>
+    </Row>
+    <Row varName="retailer_ads_12" varLabel="">
+        <ID>1012</ID>
+        <Title>Shopclues</Title>
+        <Value>12</Value>
+        <Status>00</Status>
+    </Row>
+    <Row varName="retailer_ads_14" varLabel="">
+        <ID>1014</ID>
+        <Title>PayTM</Title>
+        <Value>14</Value>
+        <Status>00</Status>
+    </Row>
+    <Row varName="retailer_ads_13" varLabel="">
+        <ID>1013</ID>
+        <Title>Others</Title>
+        <Value>13</Value>
+        <Status>00</Status>
+    </Row>
+</Table>

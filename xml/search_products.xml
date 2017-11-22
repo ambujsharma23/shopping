@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Table>
+	<Row>
+		<ID>1000</ID>
+		<Title>Online</Title>
+		<Value>1</Value>
+		<Status>00</Status>
+	</Row>
+	<Row>
+    	<ID>1001</ID>
+    	<Title>Offline / Physical Store</Title>
+    	<Value>2</Value>
+    	<Status>00</Status>
+ 	</Row>
+ 	<Row>
+    	<ID>1002</ID>
+    	<Title>Both</Title>
+    	<Value>3</Value>
+    	<Status>00</Status>
+ 	</Row>  
+</Table>

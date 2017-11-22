@@ -1,0 +1,579 @@
+
+//user logged in check process
+// jQuery Cookie Plugin
+(function(factory){if(typeof define==='function'&&define.amd&&define.amd.jQuery){define(['jquery'],factory);}else{factory(jQuery);}}(function($){var pluses=/\+/g;function raw(s){return s;}
+function decoded(s){return decodeURIComponent(s.replace(pluses,' '));}
+function converted(s){if(s.indexOf('"')===0){s=s.slice(1,-1).replace(/\\"/g,'"').replace(/\\\\/g,'\\');}
+return config.json?JSON.parse(s):s;}
+var config=$.cookie=function(key,value,options){if(value!==undefined){options=$.extend({},config.defaults,options);if(typeof options.expires==='number'){var days=options.expires,t=options.expires=new Date();t.setDate(t.getDate()+days);}
+value=config.json?JSON.stringify(value):String(value);return(document.cookie=[encodeURIComponent(key),'=',config.raw?value:encodeURIComponent(value),options.expires?'; expires='+options.expires.toUTCString():'',options.path?'; path='+options.path:'',options.domain?'; domain='+options.domain:'',options.secure?'; secure':''].join(''));}
+var decode=config.raw?raw:decoded;var cookies=document.cookie.split('; ');var result=key?undefined:{};for(var i=0,l=cookies.length;i<l;i++){var parts=cookies[i].split('=');var name=decode(parts.shift());var cookie=decode(parts.join('='));if(key&&key===name){result=converted(cookie);break;}
+if(!key){result[name]=converted(cookie);}}
+return result;};config.defaults={};$.removeCookie=function(key,options){if($.cookie(key)!==undefined){$.cookie(key,'',$.extend(options,{expires:-1}));return true;}
+return false;};}));
+
+// User Data
+var _tp_data = {
+	isLogged : false,
+	email : false,
+	city :  "",
+	pic : null,
+	thumb : null,
+	fname : "",
+	fullName : "",
+	badge : "",
+	points : 0,
+	profile : "",
+	uid : null
+};
+
+function valExists(val) {
+	var ret = false;
+	if (val == null || val == '' || typeof val == 'undefined') {
+		ret = false;
+	} else {
+		ret = true;
+	}
+	return ret;
+}			   
+function getUserNameFromCook() {
+	var isLogged1 = '',
+	loginFlag = false,
+	usrnme = '',
+	fname = '',
+	lname = '';
+	isLogged1 = $.cookie('MSCSAuth');
+	if (valExists(isLogged1)) {
+		var cookVal = $.cookie('MSCSAuthDetails');
+		if (valExists(cookVal)) {
+			usrnme = cookVal.split('=')[1];
+		} else {
+			cookVal = $.cookie('MSCSAuthDetail');
+			if (valExists(cookVal)) {
+				if (cookVal.indexOf('~') != -1) {
+					var tempArr = cookVal.split('~');
+					for (var x = 0; x < tempArr.length; x++) {
+						if (tempArr[x].indexOf('Email') != -1) {
+							usrnme = tempArr[x].replace('Email=', '');
+							break;
+						}
+					}					
+				} else if (cookVal.indexOf('Email') != -1) {
+					usrnme = cookVal.replace('Email=', '');
+				}
+			}
+		}
+		var tempArrs = $.cookie('MSCSAuthDetail').split('~');
+		for (var i = 0; i < tempArrs.length; i++) {
+			if (tempArrs[i].indexOf('FirstName') != -1) {
+				fname = tempArrs[i].replace('FirstName=', '');
+				break;
+			}
+		}
+		for (var j = 0; j < tempArrs.length; j++) {
+			if (tempArrs[j].indexOf('LastName') != -1) {
+				lname = tempArrs[j].replace('LastName=', '');
+				break;
+			}
+		}
+	}
+	if (isLogged1 != "" && isLogged1 != null) {
+		loginFlag = true;
+		if (usrnme.indexOf('@') == -1) {
+			usrnme = usrnme + '@indiatimes.com';
+		}
+		fname = (fname == 'null' || fname == null || fname == '') ? '' : fname;
+		lname = (lname == 'null' || lname == null || lname == '') ? '' : lname;
+	}
+	_tp_data.isLogged = loginFlag;
+	_tp_data.email = usrnme;
+	_tp_data.fname = fname;
+	_tp_data.fullName = (lname != '') ? fname + " " + lname : fname;
+}
+
+// objLocation
+objLoc = {
+    service: 'http://ua.economictimes.indiatimes.com/userprofiling/suggestivesearch/locations',
+	service_company:'http://etspeedapi.indiatimes.com/etspeeds/ethome.ep?matchCompanyName=true&outputype=json&sector=true&pagesize=10',
+	service_designation:'http://etnstg.economictimes.indiatimes.com:9090/userprofiling/getdesignations',
+    countryData: [],
+	companyData:[],
+	designationData:[],
+    scroll: 0,
+    init: function (obj) {
+        try {
+            objLoc.bindLocationEvents(obj.textbox, obj.div, obj.service, obj.data);
+            objLoc.preventEnter();
+        } catch (e) {
+
+        }
+    },
+    isValid: function (tbs) {
+		try {
+        var valid = 0;
+		switch(tbs){
+			case '#country':
+			 $.each(objLoc['countryData'], function (i, v) {
+            if ($.trim($(tbs).val()) == $.trim(v['result'])) {
+                valid = 1;
+            }
+        });
+        return valid;
+			break;
+			case '#company':
+			 $.each(objLoc['companyData'], function (i, v) {
+            if ($.trim($(tbs).val()) == $.trim(v['tagName'])) {
+                valid = 1;
+            }
+        });
+        return valid;
+			break;
+			default:
+			 $.each(objLoc['designationData'], function (i, v) {
+            if ($.trim($(tbs).val()) == $.trim(v['designation'])) {
+                valid = 1;
+            }
+        });
+        return valid;
+			break;
+			}
+		} catch(e) {
+				console.log('Error isValid', e);
+			}
+       
+    },
+    //processResponse
+    pr: function (data, tbs, sbs, service, data_var) {
+        objLoc[data_var] = data;
+		var li_count=0;
+		switch(service){
+		case 'service_company':
+		 var html = '<ul>';
+        $.each(data, function (i, v) {
+            html += '<li>' + v['tagName'] + '</li>';
+        });
+        html += '</ul>';
+		break;
+		case 'service_designation':
+		 var html = '<ul>';
+        $.each(data, function (i, v) {
+            html += '<li>' + v['designation'] + '</li>';
+        });
+        html += '</ul>';
+		break;
+		default:
+		 var html = '<ul>';
+        $.each(data, function (i, v) {
+        html += '<li>' + v['result'] + '</li>';
+        });
+        html += '</ul>';
+		break;	
+			}
+		$(sbs).html(html);
+		if($(sbs + " ul li").length>=1){
+        $(sbs).show();
+		}
+		else{$(sbs).hide();}
+        objLoc.bindLiClick(tbs,sbs);
+    },
+    xhr: 0,
+    getData: function (str, tbs, sbs, service, data_var) {
+        if (objLoc.xhr) {
+            objLoc.xhr.abort();
+        }
+		if(tbs == '#country') {
+			data = {prefix: str};
+		} else if(tbs == '#company') {
+			data = {ticker: str};
+		}
+		
+        objLoc.xhr = $.ajax({
+            url: objLoc[service],
+            data: data,
+            dataType: 'jsonp',
+            success: function (response) {
+                objLoc.pr(response, tbs, sbs, service, data_var);
+            }
+        });
+    },
+	setValue:function(val, tbs) {
+		$(tbs).val(val);
+	},
+    bindLiClick: function (tbs, sbs) {
+        $(sbs + ' ul li').click(function () {
+            objLoc.setValue($(this).text(), tbs);
+			onchange(tbs);
+        });
+    },
+    bindLocationEvents: function (tbs, sbs, service, data_var) {
+        $(tbs).unbind('focus').unbind('blur').unbind('keyup');
+        $(tbs).focus(function () {
+            $(sbs).html('');
+            if ($.trim($(this).val()) == $(this).attr('data-label')) {
+                $(this).val('');
+            }
+        }).blur(function () {
+            if ($.trim($(this).val()) == '') {
+                $(this).val($(this).attr('data-label'));
+				onchange(tbs);
+            }
+			if(!objLoc.isValid(tbs) ) {
+				if(service!='service_company'){
+				$(tbs).val('');
+				}
+			}
+            setTimeout("$('" + sbs + "').hide()", 300);
+			
+        }).keyup(function (e) {
+            e.preventDefault();
+
+            var txt = $(this).val();
+            var key = (window.event) ? event.keyCode : e.keyCode;
+			console.log('key', key);
+			            var selector = sbs + ' ul', objLi = $(selector + " > li");
+            switch (key) {
+                case 13:
+                    objLoc.setValue($(selector + " > li.active").text(), tbs);
+                    $(sbs).hide();
+					onchange(tbs);
+                    return false;
+                    break;
+                    // When Press Down Arrow
+                case 40 :
+                    if (objLi.hasClass("active")) {
+                        if ($(selector + " > li.active").index() == objLi.length - 1) {
+                            objLi.eq(0).addClass("active").siblings().removeClass("active");
+                            objLoc.scroll = 0;
+                        } else {
+                            objLi.eq($(selector + " > li.active").next().index()).addClass("active").siblings().removeClass("active");
+                            objLoc.scroll += $(selector + " > li.active").prev('li').outerHeight();
+                        }
+                    } else {
+                        objLi.eq(0).addClass("active");
+                        objLoc.scroll = 0;
+                    }
+                    objLoc.setValue($(selector + " > li.active").text(), tbs);
+                    $(sbs).scrollTop(objLoc.scroll);
+                    break;
+                    // When Press UP Arrow
+                case 38 :
+                    if (objLi.hasClass("active")) {
+                        if ($(selector + " > li.active").index() == 0) {
+                            objLi.eq(objLi.length - 1).addClass("active").siblings().removeClass("active");
+                            objLoc.scroll = $(selector).height() - $(selector + " > li.active").height();
+                        } else {
+                            objLi.eq($(selector + " > li.active").prev().index()).addClass("active").siblings().removeClass("active");
+                            var b = $(selector + " > li.active").outerHeight() > $(selector + " > li.active").next().outerHeight() ? $(selector + " > li.active").outerHeight() : $(selector + " > li.active").next().outerHeight();
+
+                            objLoc.scroll = objLoc.scroll - b;
+                        }
+                    } else {
+                        objLi.eq(objLi.last().index()).addClass("active");
+                        objLoc.scroll = $(selector).height() - $(selector + " > li.active").height();
+                    }
+                    objLoc.setValue($(selector + " > li.active").text(), tbs);
+                    $(sbs).scrollTop(objLoc.scroll);
+                    break;
+                case 27:
+                    e.preventDefault();
+                    $(sbs).html('');
+                    $(tbs).text('').trigger('keyup');
+                    break;
+                default:
+                    if (txt.length >= 1) {
+                        objLoc.scroll = 0;
+                        $(sbs).scrollTop(0);
+                        objLoc.getData(txt, tbs, sbs, service, data_var);
+                    }
+					else{
+						$(sbs).hide();
+						}
+                    break;
+            }
+        });
+    },
+    preventEnter: function () {
+        $(window).keydown(function (event) {
+            if (event.keyCode == 13) {
+                event.preventDefault();
+                return false;
+            }
+        });
+    }
+};
+$(document).ready(function () {
+	//country service call
+    objLoc.init({'textbox': '#country', 'div': '#country_options','service':'service','data':'countryData'});
+    objLoc.init({'textbox': '#company', 'div': '#company_options','service':'service_company','data':'companyData'});
+    objLoc.init({'textbox': '#designation', 'div': '#designation_options','service':'service_designation','data':'designationData'});
+	// get user logged in data
+	getUserNameFromCook();
+	//to get logged in user email id
+	if(_tp_data.isLogged){
+		var em=_tp_data.email;
+		$("#emailId").val(em);
+	}
+	else{
+		$("#emailId").attr('readonly',false);
+		$("#email_cb").hide();
+		}
+	// lightbox
+	 $("#light, #fade").css('display','block');
+ 	 $("#close").click(function(){
+	  $("#light, #fade").css('display','none');
+	  $("#member_table, #fade").css('display','none');
+	  });
+	
+	 //side animateion for terms and conditions
+	 $(".btn").click(function(){
+		$("#survey_terms").animate({right:'0px'});
+		$("#close_terms").show();
+ 	 });
+	 $("#close_terms").click(function(){
+		$("#survey_terms").animate({right:'-450px'});
+		$("#close_terms").hide();
+		return false;
+	  });
+	// get session id
+	session_id="";
+	$.ajax({
+		url: "http://etnstg.economictimes.indiatimes.com:9090/userprofiling/juxt/getsession/?testing=",
+		dataType:"jsonp",
+		success: function(data){
+		session_id=data.sessionid;
+		console.log(data.sessionid);
+		$(".sessionid").val(session_id);
+		}
+	});
+	// Check whether you enter numeric values only
+	var specialKeys = new Array();
+        specialKeys.push(8); //Backspace
+        $(function () {
+			var num=$("input[data-number = 'number']");
+			   $(num).bind("keypress", function (e) {
+                var keyCode = e.which ? e.which : e.keyCode
+                var ret = ((keyCode >= 48 && keyCode <= 57) || specialKeys.indexOf(keyCode) != -1);
+                return ret;
+			});	
+            $(num).bind("paste", function (e) {
+                return false;
+            });			
+            $(num).bind("drop", function (e) {
+                return false;
+            });
+		});
+		
+	// check for months and days
+	$("#monthOfBirth,#dayOfBirth,#yearOfBirth").change(function(){
+		var month=parseInt($("#monthOfBirth").find("option:selected").attr('data-days'));
+		var days=parseInt($("#dayOfBirth").find("option:selected").val());
+		var year=parseInt($("#yearOfBirth").find("option:selected").val());
+		var lyd=29;
+		var ly=parseInt(year%4);
+		if(month==28 && days>lyd)
+		{
+			alert("Days should not be greater than 29 in February.");
+			$('#dayOfBirth option[value=0]').attr('selected', 'selected');
+			$('#monthOfBirth option[value=0]').attr('selected', 'selected');
+			$('#yearOfBirth option[value=0]').attr('selected', 'selected');
+			$("#dayOfBirth").focus();	
+		}
+		else if(month==28 && days>month && ly>0){
+			alert("Days should not be greater than 28 in February because this is not a leap year.");
+			$('#dayOfBirth option[value=0]').attr('selected', 'selected');
+			$('#monthOfBirth option[value=0]').attr('selected', 'selected');
+			$('#yearOfBirth option[value=0]').attr('selected', 'selected');
+			$("#dayOfBirth").focus();
+			}
+		else if(month==30 && days>month){
+			alert("Days should not be greater than 30 in this month.");
+			$('#dayOfBirth option[value=0]').attr('selected', 'selected');
+			$('#monthOfBirth option[value=0]').attr('selected', 'selected');
+			$('#yearOfBirth option[value=0]').attr('selected', 'selected');
+			$("#dayOfBirth").focus();
+		}
+		});
+		//assign value to total textbox
+		$("#monthlyHouseholdExpenses,#loansEmi,#savingOrCashInBank,#investmentMFOrInsurance,#others").change(function(){
+			var total=0;
+			if($(this).val()==""){
+				parseInt($(this).val(0));
+			}
+			else if(parseInt($(this).val())>=0){
+				var mhe=parseInt($("#monthlyHouseholdExpenses").val());
+				var le=parseInt($("#loansEmi").val());
+				var scib=parseInt($("#savingOrCashInBank").val());
+				var imi=parseInt($("#investmentMFOrInsurance").val());
+				var oth=parseInt($("#others").val());
+				var total=parseInt(mhe+le+scib+imi+oth);
+				if(total>100 || total<0){
+					alert("Total canot be greater than 100% or less than 0%.");
+					$(this).val(0);
+					$(this).focus();
+				}
+				else{
+					$("#total_value").html(total);
+				}
+			}
+		});
+		
+});
+//visible fields on the basis of country
+		function onchange(tbs){
+			//debugger;
+			if(tbs=="#country"){
+			var country_val=$.trim($(tbs).val());
+			var other=$.trim($("#country").val().split(",")[2]);
+			console.log('country_val', country_val, 'other', other);
+			$(".location, .other_location").hide();
+			if(other=="INDIA"){
+				$(".location").show();
+			}
+			else if(other!="INDIA" && country_val!=""){
+				$(".other_location").show();
+			}
+			}
+		};
+		
+//check whether user cannot enter any value out of the range in male and female range boxes
+function add_minus(id, span_id){
+	var value=parseInt($(id).val());
+	if(span_id=="male_add" || span_id=="female_add"){
+	  if(value<7 && value>=0){
+	  value++;
+	  $(id).val(value);
+	  } 
+	}
+	else if(span_id=="male_minus" || span_id=="female_minus"){
+		if(value<=7 && value>0){
+		value--;
+		$(id).val(value);
+		} 
+	}
+}
+
+// Required field validations
+function validate_form(){
+	var flag=0;
+	//calculation for members
+	var mm= parseInt($("#membersInHouseHold_Male").val());
+	var fm= parseInt($("#membersInHouseHold_Female").val());
+	var sum_members=parseInt(mm+fm);
+	//check for cmplete form required validations
+	$("select[data-type='select'], input[data-type='textbox'],input[type='checkbox']").each(function() {
+				var var_validate=$(this).find("option:selected").index();
+				var parent_css=$.trim($(this).parent().parent().css('display'));
+				if(($(this).val()=="" || var_validate==0) && parent_css!='none'){
+					flag=3;
+					$(this).css('border','2px solid red');
+					}
+				else{
+					$(this).css('border','1px solid #D8D8D8');
+					}
+	});
+	var rege = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+	var valid = rege.test($('#emailId').val());
+	var mob_len=$.trim($("#mobileNo").val()).length;
+	//check for mobile
+	if(mob_len>0 && mob_len<10){
+			flag=2;
+		}
+	else if($.trim($("#mobileNo").val())==""){
+			  $("#mobileNo").val("");
+			  $("#mobileNo").css('border','1px solid #D8D8D8');
+			  $("#mobileNo").attr('placeholder',"Enter your mobile number");	
+	}
+	else if(mob_len==10){
+				  $("#mobileNo").css('border','1px solid #D8D8D8');	
+	}
+	//check for email id
+	if($.trim($("#emailId").val())!="" && !valid){
+			  flag=1;
+	}
+	else if($.trim($("#emailId").val())==""){
+			  $("#emailId").val("");
+			  $("#emailId").css('border','1px solid #D8D8D8');
+			  $("#emailId").attr('placeholder',"Enter email address");
+	}
+	else if(valid){
+		$("#emailId").css('border','1px solid #D8D8D8');
+		}
+	// error show and focus
+	if(flag==1){
+		alert('Please enter all the highlighted fields correctly.');
+		$("#emailId").css('border','2px solid red');
+		$("#emailId").focus();
+		}
+	else if(flag==2){
+		alert('Please enter all the highlighted fields correctly.');
+		$("#mobileNo").css('border','2px solid red');
+		$("#mobileNo").focus();
+		}
+	else if(flag==3){
+	$("select[data-type='select'], input[data-type='textbox'],input[type='checkbox']").each(function() {
+				var var_validate=$(this).find("option:selected").index();
+				var parent_css=$.trim($(this).parent().parent().css('display'));
+				if(($(this).val()=="" || var_validate==0) && parent_css!='none'){
+					alert('Please enter all the highlighted fields correctly.');
+					$(this).focus();
+					return false;
+				}
+	});
+	}
+	else if(sum_members<1){
+		alert('Please select atleast one member you share the kitchen?');
+		$("#membersInHouseHold_Male, #membersInHouseHold_Female").css('border','2px solid red');
+		$("#membersInHouseHold_Male").focus();
+		}
+	//member table show hide
+	else if(sum_members>0){
+		$('table tr').hide();
+		$("#member_table, #fade").css('display','block');
+		$('html, body').animate({scrollTop: "0px"});
+		for(var i=0;i<sum_members+2;i++){
+				$('table tr').eq(i).show();
+			}
+		//$("#close_mem").click(function(){
+	  	//$("#member_table, #fade").css('display','none');
+	  	//});
+	}
+}
+	function mem_table_val(){
+		var flag_mem=0;
+		$("#member_table select").each(function() {
+				var var_validate=$(this).find("option:selected").index();
+				var parent_css=$.trim($(this).parent().parent().css('display'));
+				if(var_validate==0 && parent_css!='none'){
+					flag_mem=1;
+					$(this).css('border','2px solid red');
+					}
+				else{
+					$(this).css('border','1px solid #D8D8D8');
+					}
+		});
+		if(flag_mem==1){
+			$("#member_table  select").each(function() {
+					var var_validate=$(this).find("option:selected").index();
+					var parent_css=$.trim($(this).parent().parent().css('display'));
+					if(var_validate==0 && parent_css!='none'){
+						alert('Please enter all the highlighted fields correctly.');
+						$(this).focus();
+						return false;
+					}
+				});
+		}
+		else if(flag_mem==0){
+		$('#form1').submit();
+		}
+		
+	}
+	function success(data){
+		if(data.status=="success"){
+			window.location="https://www.google.com";
+		}
+		else{
+			alert("Please fill all the entries in correct manner");
+		}
+	}	
+	
+		

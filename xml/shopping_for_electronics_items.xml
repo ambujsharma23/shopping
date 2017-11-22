@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Table>
+	<Row varName="shopping_for_electronics_items_1" varLabel="">
+    	<ID>1000</ID>
+    	<Title>Amazon</Title>
+    	<Value>1</Value>
+    	<Status>00</Status>
+ 	</Row>
+ 	<Row varName="shopping_for_electronics_items_2" varLabel="">
+    	<ID>1001</ID>
+    	<Title>Flipkart</Title>
+    	<Value>2</Value>
+    	<Status>00</Status>
+ 	</Row>
+ 	<Row varName="shopping_for_electronics_items_3" varLabel="">
+    	<ID>1002</ID>
+    	<Title>Ebay</Title>
+    	<Value>3</Value>
+    	<Status>00</Status>
+ 	</Row>
+ 	<Row varName="shopping_for_electronics_items_4" varLabel="">
+    	<ID>1003</ID>
+    	<Title>PayTm</Title>
+    	<Value>4</Value>
+    	<Status>00</Status>
+ 	</Row>
+ 	<Row varName="shopping_for_electronics_items_5" varLabel="">
+    	<ID>1004</ID>
+    	<Title>Snapdeal</Title>
+    	<Value>5</Value>
+    	<Status>00</Status>
+ 	</Row>
+ 	<Row varName="shopping_for_electronics_items_6" varLabel="">
+    	<ID>1005</ID>
+    	<Title>Shopclues</Title>
+    	<Value>6</Value>
+    	<Status>00</Status>
+ 	</Row>
+ 	<Row varName="shopping_for_electronics_items_7" varLabel="">
+    	<ID>1006</ID>
+    	<Title>None</Title>
+    	<Value>7</Value>
+    	<Status>00</Status>
+ 	</Row>
+    
+</Table>

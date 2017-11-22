@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Table>
+	<Row>
+		<ID>1000</ID>
+		<Title>Less than 15 Years</Title>
+		<Value>1</Value>
+		<Status>00</Status>
+	</Row>
+	<Row>
+    	<ID>1001</ID>
+    	<Title>15 Years - 25 Years</Title>
+    	<Value>2</Value>
+    	<Status>00</Status>
+ 	</Row>
+ 	<Row>
+    	<ID>1002</ID>
+    	<Title>26 Years - 35 Years</Title>
+    	<Value>3</Value>
+    	<Status>00</Status>
+ 	</Row>
+ 	<Row>
+    	<ID>1003</ID>
+    	<Title>36 Years - 45 Years</Title>
+    	<Value>4</Value>
+    	<Status>00</Status>
+ 	</Row>
+ 	<Row>
+    	<ID>1004</ID>
+    	<Title>46 Years - 55 Years</Title>
+    	<Value>5</Value>
+    	<Status>00</Status>
+ 	</Row>
+ 	<Row>
+    	<ID>1005</ID>
+    	<Title>More than 55 Years</Title>
+    	<Value>6</Value>
+    	<Status>00</Status>
+ 	</Row>
+</Table>

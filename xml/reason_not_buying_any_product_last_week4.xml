@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Table>
+	<Row varName="reason_not_buying_any_product_last_week_1" varLabel="">
+		<ID>1000</ID>
+		<Title>I decided to postpone my purchase</Title>
+		<Value>1</Value>
+		<Status>00</Status>
+	</Row>
+	<Row varName="reason_not_buying_any_product_last_week_2" varLabel="">
+    	<ID>1001</ID>
+    	<Title>I did not find the product that I was looking for</Title>
+    	<Value>2</Value>
+    	<Status>00</Status>
+ 	</Row>
+ 	<Row varName="reason_not_buying_any_product_last_week_3" varLabel="">
+    	<ID>1002</ID>
+    	<Title>I am looking out for a better deal</Title>
+    	<Value>3</Value>
+    	<Status>00</Status>
+ 	</Row>  
+    <Row varName="reason_not_buying_any_product_last_week_4" varLabel="">
+        <ID>1004</ID>
+        <Title>The price was too expensive</Title>
+        <Value>4</Value>
+        <Status>00</Status>
+    </Row>
+ <Row varName="reason_not_buying_any_product_last_week_5" varLabel="">
+        <ID>1004</ID>
+        <Title> I have not had time to buy it</Title>
+        <Value>5</Value>
+        <Status>00</Status>
+    </Row>
+
+    <Row varName="reason_not_buying_any_product_last_week_6" varLabel="">
+        <ID>1005</ID>
+        <Title>Others</Title>
+        <Value>6</Value>
+        <Status>00</Status>
+    </Row>
+    
+</Table>

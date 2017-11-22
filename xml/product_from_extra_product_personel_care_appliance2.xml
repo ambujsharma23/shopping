@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Table>
+	<Row varName="product_from_extra_product_personel_care_appliance2_1" varLabel="">
+		<ID>1000</ID>
+		<Title>Price was right</Title>
+		<Value>1</Value>
+		<Status>00</Status>
+	</Row>
+	<Row varName="product_from_extra_product_personel_care_appliance2_2" varLabel="">
+    	<ID>1001</ID>
+    	<Title>Assurance of quality</Title>
+    	<Value>2</Value>
+    	<Status>00</Status>
+ 	</Row>
+ 	<Row varName="product_from_extra_product_personel_care_appliance2_3" varLabel="">
+    	<ID>1002</ID>
+    	<Title>Wide range of products</Title>
+    	<Value>3</Value>
+    	<Status>00</Status>
+ 	</Row>  
+    <Row varName="product_from_extra_product_personel_care_appliance2_4" varLabel="">
+        <ID>1004</ID>
+        <Title>Site experience is great</Title>
+        <Value>4</Value>
+        <Status>00</Status>
+    </Row>
+    <Row varName="product_from_extra_product_personel_care_appliance2_5" varLabel="">
+        <ID>1005</ID>
+        <Title>It’s a retailer I trust</Title>
+        <Value>5</Value>
+        <Status>00</Status>
+    </Row>
+     <Row varName="product_from_extra_product_personel_care_appliance2_6" varLabel="">
+        <ID>1006</ID>
+        <Title>It has a good exchange policy</Title>
+        <Value>6</Value>
+        <Status>00</Status>
+    </Row>
+
+     <Row varName="product_from_extra_product_personel_care_appliance2_7" varLabel="">
+        <ID>1007</ID>
+        <Title>It is convenient</Title>
+        <Value>7</Value>
+        <Status>00</Status>
+    </Row>
+
+     <Row varName="product_from_extra_product_personel_care_appliance2_8" varLabel="">
+        <ID>1008</ID>
+        <Title>Comparing / choosing products is very easy</Title>
+        <Value>8</Value>
+        <Status>00</Status>
+    </Row>
+
+     <Row varName="product_from_extra_product_personel_care_appliance2_9" varLabel="">
+        <ID>1010</ID>
+        <Title>Others</Title>
+        <Value>9</Value>
+        <Status>00</Status>
+    </Row>      
+</Table>

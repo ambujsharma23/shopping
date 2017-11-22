@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Table>
+	<Row varName="product_brought_1" varLabel="">
+		<ID>1001</ID>
+		<Title>Tablet</Title>
+		<Value>1</Value>
+		<Status>00</Status>
+	</Row>
+	<Row varName="product_brought_2" varLabel="">
+    	<ID>1002</ID>
+    	<Title>Laptop, Computer (Desktop)</Title>
+    	<Value>2</Value>
+    	<Status>00</Status>
+ 	</Row>
+ 	<Row varName="product_brought_3" varLabel="">
+    	<ID>1003</ID>
+    	<Title>Mobile Phone</Title>
+    	<Value>3</Value>
+    	<Status>00</Status>
+ 	</Row>
+ 	<Row varName="product_brought_4" varLabel="">
+    	<ID>1004</ID>
+    	<Title>Television (LCD/LED/3D)</Title>
+    	<Value>4</Value>
+    	<Status>00</Status>
+ 	</Row>
+ 	<Row varName="product_brought_5" varLabel="">
+    	<ID>1005</ID>
+    	<Title>Kitchen Appliances (Microwave, Mixer, Juicer,etc)</Title>
+    	<Value>5</Value>
+    	<Status>00</Status>
+ 	</Row>
+ 	<Row varName="product_brought_6" varLabel="">
+    	<ID>1006</ID>
+    	<Title>Large Appliances (Refrigerator,AC,Washing Machine )</Title>
+    	<Value>6</Value>
+    	<Status>00</Status>
+ 	</Row>
+    <Row varName="product_brought_98" varLabel="">
+        <ID>1007</ID>
+        <Title>Didn’t bought any</Title>
+        <Value>98</Value>
+        <Status>00</Status>
+    </Row>  
+</Table>
