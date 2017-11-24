@@ -91,6 +91,12 @@
         <Status>00</Status>
     </Row> 
     <Row>
+        <ID>1016</ID>
+        <Title>PayTM</Title>
+        <Value>18</Value>
+        <Status>00</Status>
+    </Row> 
+    <Row>
         <ID>1014</ID>
         <Title>Company’s exclusive showroom</Title>
         <Value>15</Value>

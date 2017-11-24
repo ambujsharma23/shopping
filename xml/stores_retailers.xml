@@ -92,7 +92,12 @@
         <Status>00</Status>
     </Row>
 
-
+<Row varName="stores_retailers_20" varLabel="">
+        <ID>1020</ID>
+        <Title>Tata cliq</Title>
+        <Value>20</Value>
+        <Status>00</Status>
+    </Row>
      <Row varName="stores_retailers_15" varLabel="">
         <ID>1014</ID>
         <Title>Company’s exclusive showroom</Title>

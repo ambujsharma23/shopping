@@ -72,6 +72,13 @@
         <Value>12</Value>
         <Status>00</Status>
     </Row>  
+
+<Row>
+        <ID>1014</ID>
+        <Title>Xiaomi</Title>
+        <Value>23</Value>
+        <Status>00</Status>
+    </Row> 
     <Row>
         <ID>1012</ID>
         <Title>BLACKBERRY</Title>
@@ -127,7 +134,13 @@
         <Title>CROMA</Title>
         <Value>21</Value>
         <Status>00</Status>
-    </Row>   	
+    </Row>  
+<Row>
+        <ID>1015</ID>
+        <Title>One Plus</Title>
+        <Value>24</Value>
+        <Status>00</Status>
+    </Row>  	
 	<Row>
         <ID>1013</ID>
         <Title>Others </Title>

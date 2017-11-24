@@ -90,6 +90,12 @@
         <Value>15</Value>
         <Status>00</Status>
     </Row>
+<Row>
+        <ID>1014</ID>
+        <Title>Tata cliq</Title>
+        <Value>18</Value>
+        <Status>00</Status>
+    </Row>
     <Row>
         <ID>1012</ID>
         <Title>Company’s exclusive showroom</Title>

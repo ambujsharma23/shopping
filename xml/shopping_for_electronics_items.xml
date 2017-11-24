@@ -36,6 +36,12 @@
     	<Value>6</Value>
     	<Status>00</Status>
  	</Row>
+	<Row varName="shopping_for_electronics_items_8" varLabel="">
+    	<ID>1007</ID>
+    	<Title>Tata cliq</Title>
+    	<Value>8</Value>
+    	<Status>00</Status>
+ 	</Row>
  	<Row varName="shopping_for_electronics_items_7" varLabel="">
     	<ID>1006</ID>
     	<Title>None</Title>

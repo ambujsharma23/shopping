@@ -84,6 +84,12 @@
         <Value>14</Value>
         <Status>00</Status>
     </Row>
+	<Row varName="retailer_ads_15" varLabel="">
+        <ID>1015</ID>
+        <Title>Tata cliq</Title>
+        <Value>15</Value>
+        <Status>00</Status>
+    </Row>
     <Row varName="retailer_ads_13" varLabel="">
         <ID>1013</ID>
         <Title>Others</Title>

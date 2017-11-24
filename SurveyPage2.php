@@ -1132,7 +1132,7 @@ $(document).ready(function(){
 
  //tablet online products reason//
         $("#purchase_tablet").change(function(){
-       if($(this).val()=='7' || $(this).val()=='8' || $(this).val()=='12' || $(this).val()=='11' || $(this).val()=='19'){
+       if($(this).val()=='7' || $(this).val()=='8' || $(this).val()=='12' || $(this).val()=='11' || $(this).val()=='19' || $(this).val()=='20') {
           $("#purchase_reason_for_online_tablet").show();
         }else {
           $("#purchase_reason_for_online_tablet").hide();
@@ -1188,7 +1188,7 @@ $(document).ready(function(){
 
  //laptop online products reason//
         $("#purchase_laptop").change(function(){
-       if($(this).val()=='7' || $(this).val()=='8' || $(this).val()=='12' || $(this).val()=='11' || $(this).val()=='19'){
+       if($(this).val()=='7' || $(this).val()=='8' || $(this).val()=='12' || $(this).val()=='11' || $(this).val()=='19' || $(this).val()=='20'){
           $("#purchase_reason_for_online_laptop").show();
         }else {
           $("#purchase_reason_for_online_laptop").hide();
@@ -1245,7 +1245,7 @@ $(document).ready(function(){
 
  //kitchen online products reason//
         $("#purchase_kitchen_product").change(function(){
-       if($(this).val()=='7' || $(this).val()=='8' || $(this).val()=='12' || $(this).val()=='11' || $(this).val()=='19'){
+       if($(this).val()=='7' || $(this).val()=='8' || $(this).val()=='12' || $(this).val()=='11' || $(this).val()=='19' || $(this).val()=='20'){
           $("#purchase_reason_for_online_kitchen").show();
         }else {
           $("#purchase_reason_for_online_kitchen").hide();
@@ -1301,7 +1301,7 @@ $(document).ready(function(){
 
  //mobile online products reason//
         $("#purchase_mobile").change(function(){
-       if($(this).val()=='7' || $(this).val()=='8' || $(this).val()=='12' || $(this).val()=='11' || $(this).val()=='19'){
+       if($(this).val()=='7' || $(this).val()=='8' || $(this).val()=='12' || $(this).val()=='11' || $(this).val()=='19' || $(this).val()=='20'){
           $("#purchase_reason_for_online_mobile").show();
         }else {
           $("#purchase_reason_for_online_mobile").hide();
@@ -1357,7 +1357,7 @@ $(document).ready(function(){
 
  //tv online products reason//
         $("#purchase_tv").change(function(){
-       if($(this).val()=='7' || $(this).val()=='8' || $(this).val()=='12' || $(this).val()=='11' || $(this).val()=='19'){
+       if($(this).val()=='7' || $(this).val()=='8' || $(this).val()=='12' || $(this).val()=='11' || $(this).val()=='19' $(this).val()=='20'){
           $("#purchase_reason_for_online_tv").show();
         }else {
           $("#purchase_reason_for_online_tv").hide();
@@ -1412,7 +1412,7 @@ $(document).ready(function(){
 
  //appliances online products reason//
         $("#purchase_appliances").change(function(){
-       if($(this).val()=='7' || $(this).val()=='8' || $(this).val()=='12' || $(this).val()=='11' || $(this).val()=='19'){
+       if($(this).val()=='7' || $(this).val()=='8' || $(this).val()=='12' || $(this).val()=='11' || $(this).val()=='19' $(this).val()=='20'){
           $("#purchase_reason_for_online_appliance").show();
         }else {
           $("#purchase_reason_for_online_appliance").hide();
@@ -1470,7 +1470,7 @@ $(document).ready(function(){
 
  //personel care online products reason//
         $("#purchase_personel_care").change(function(){
-       if($(this).val()=='7' || $(this).val()=='8' || $(this).val()=='12' || $(this).val()=='11' || $(this).val()=='19'){
+       if($(this).val()=='7' || $(this).val()=='8' || $(this).val()=='12' || $(this).val()=='11' || $(this).val()=='19' $(this).val()=='20'){
           $("#purchase_reason_for_online_personel_care").show();
         }else {
           $("#purchase_reason_for_online_personel_care").hide();
@@ -4156,6 +4156,15 @@ table tbody tr {
    <span id="panel_personel_care"></span>
   <!--end visited recommend from purchase_personel_care div section -->
    <!--10May-16 end-->
+   <!--24 nov 2017 start-->
+    <div  class="content_14_n" style="width: 995px;">
+          <span class="content_l4_n_span" style="width:37%">Who would be the primary user of this product?</span>
+            <div style="float:left;margin-right: 20px;">
+          </div>
+      </div>
+   
+   <!--24 nov 2017 end-->
+   
 
   <a onClick="return validate();" class="submit_btn" id="fp_submit" href="javascript:void(0);" style="display:none;"></a>
 </form>
