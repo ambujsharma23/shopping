@@ -82,10 +82,10 @@ foreach($_POST as $key=>$value)
       header("location:$redirect");
       exit();
     }else{
-       $redirect = "SurveyPage2.php?rfr=".$_REQUEST["rfr"]."&SessionId=".$_REQUEST["home_SessionId"]."&subId=".$_REQUEST['subId'];
+       $redirect = "SurveyPage2.php?rfr=".$_REQUEST["rfr"]."&SessionId=".$_REQUEST["home_SessionId"]."&g=".$_REQUEST['gender']."&subId=".$_REQUEST['subId'];
        //$redirect = REDIRECT_PATH."/SurveyPage2.php?rfr=".$_REQUEST["rfr"]."&SessionId=".$_REQUEST["home_SessionId"]."&subid=".$_REQUEST['subid'];
-       //$redirect = "SurveyPage2.php?rfr=".$_REQUEST["rfr"];
-//      header('HTTP/1.1 301 Moved Permanently');
+       //$redirect = "SurveyPage2.php?rfr=".$_REQUEST["rfr"]
+      header('HTTP/1.1 301 Moved Permanently');
       header("location:$redirect");
        echo $redirect;
 //       echo '<script>window.location="'.$redirect.'"</script>';

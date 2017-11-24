@@ -1,0 +1,5 @@
+ALTER TABLE `jc_shopping_home` ADD `retailer_ads_15` VARCHAR(200) NOT NULL AFTER `retailer_ads_14`;
+
+
+
+ALTER TABLE `jc_shopping_page2` ADD `primary_user_tablet` varchar(200), ADD `primary_user_laptop` varchar(200), ADD `primary_user_mobile` varchar(200), ADD `primary_user_tv` varchar(200), ADD `primary_user_kitchen` varchar(200), ADD `primary_user_large_appliance` varchar(200), ADD `primary_user_personel_care` varchar(200), ADD `primary_user_tablet_gender` varchar(200), ADD `primary_user_laptop_gender` varchar(200), ADD `primary_user_mobile_gender` varchar(200), ADD `primary_user_tv_gender` varchar(200), ADD `primary_user_kitchen_gender` varchar(200), ADD `primary_user_large_appliance_gender` varchar(200), ADD `primary_user_personel_care_gender` varchar(200)

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Table>
+    <Row>
+        <ID>1</ID>
+        <Title>Self</Title>
+        <Value>1</Value>
+        <Status>00</Status>
+    </Row>
+    <Row>
+        <ID>2</ID>
+        <Title>Mother</Title>
+        <Value>2</Value>
+        <Status>00</Status>
+    </Row>
+    <Row>
+        <ID>3</ID>
+        <Title>Father</Title>
+        <Value>3</Value>
+        <Status>00</Status>
+    </Row>
+    <Row >
+        <ID>4</ID>
+        <Title>Husband</Title>
+        <Value>4</Value>
+        <Status>00</Status>
+    </Row>
+    <Row>
+        <ID>5</ID>
+        <Title>Wife</Title>
+        <Value>5</Value>
+        <Status>00</Status>
+    </Row>
+    <Row>
+        <ID>6</ID>
+        <Title>Son</Title>
+        <Value>6</Value>
+        <Status>00</Status>
+    </Row>
+    <Row>
+        <ID>7</ID>
+        <Title>Daughter</Title>
+        <Value>7</Value>
+        <Status>00</Status>
+    </Row>
+    <Row>
+        <ID>8</ID>
+        <Title>Brother</Title>
+        <Value>8</Value>
+        <Status>00</Status>
+    </Row>
+    <Row>
+        <ID>9</ID>
+        <Title>Sister</Title>
+        <Value>9</Value>
+        <Status>00</Status>
+    </Row>
+    <Row>
+        <ID>96</ID>
+        <Title>Others</Title>
+        <Value>96</Value>
+        <Status>00</Status>
+    </Row>
+    
+</Table>

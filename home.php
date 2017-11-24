@@ -518,8 +518,10 @@ table tbody tr {
           <div style="float:left;margin-right: 20px;">
           <?php
               AddCheckBox1("ads_from_retailer.xml",'N',"ads_from_retailer","#7FB3E6","0","0","2","9",'100%','checknone1',false,array('this.id','this.value','98','98'),'1','300px');
-              ?></div>
+              ?>
               <div id="recently_div" style="padding-left:323px;"><input type="text" name="recent_other" id="recent_other" placeholder="Recently other"></div>
+          </div>
+              
         </div>
     </div>
   <a onClick="return validate();" class="submit_btn" id="fp_submit" href="javascript:void(0);" style="display:none;"></a>
