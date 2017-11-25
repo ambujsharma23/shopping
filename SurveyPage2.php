@@ -2158,7 +2158,7 @@ $g = isset($_GET['g']) ? $_GET['g'] : '';
                         $("#primary_user_laptop_gender1").removeAttr('name');
                         $('#primary_user_laptop_gender1').val("");
                     } else {
-                        $("#primary_user_laptop_other").hide();
+                        $("#primary_user_laptop_gender_other").hide();
                         $("#primary_user_laptop_gender").removeAttr('name');
                         if (gen == '1') {
                             $('#primary_user_laptop_gender1').val('<?php echo $g; ?>');
@@ -2178,7 +2178,7 @@ $g = isset($_GET['g']) ? $_GET['g'] : '';
                         $("#primary_user_mobile_gender1").removeAttr('name');
                         $('#primary_user_mobile_gender1').val("");
                     } else {
-                        $("#primary_user_mobile_other").hide();
+                        $("#primary_user_mobile_gender_other").hide();
                         $("#primary_user_mobile_gender").removeAttr('name');
                         if (gen == '1') {
                             $('#primary_user_mobile_gender1').val('<?php echo $g; ?>');
@@ -2199,7 +2199,7 @@ $g = isset($_GET['g']) ? $_GET['g'] : '';
                         $("#primary_user_tv_gender1").removeAttr('name');
                         $('#primary_user_tv_gender1').val("");
                     } else {
-                        $("#primary_user_tv_other").hide();
+                        $("#primary_user_tv_gender_other").hide();
                         $("#primary_user_tv_gender").removeAttr('name');
                         if (gen == '1') {
                             $('#primary_user_tv_gender1').val('<?php echo $g; ?>');
@@ -2219,7 +2219,7 @@ $g = isset($_GET['g']) ? $_GET['g'] : '';
                         $("#primary_user_kitchen_gender1").removeAttr('name');
                         $('#primary_user_kitchen_gender1').val("");
                     } else {
-                        $("#primary_user_kitchen_other").hide();
+                        $("#primary_user_kitchen_gender_other").hide();
                         $("#primary_user_kitchen_gender").removeAttr('name');
                         if (gen == '1') {
                             $('#primary_user_kitchen_gender1').val('<?php echo $g; ?>');
@@ -2240,7 +2240,7 @@ $g = isset($_GET['g']) ? $_GET['g'] : '';
                         $("#primary_user_large_appliance_gender1").removeAttr('name');
                         $('#primary_user_large_appliance_gender1').val("");
                     } else {
-                        $("#primary_user_large_appliance_other").hide();
+                        $("#primary_user_large_appliance_gender_other").hide();
                         $("#primary_user_large_appliance_gender").removeAttr('name');
                         if (gen == '1') {
                             $('#primary_user_large_appliance_gender1').val('<?php echo $g; ?>');
@@ -2261,7 +2261,7 @@ $g = isset($_GET['g']) ? $_GET['g'] : '';
                         $("#primary_user_personel_care_gender1").removeAttr('name');
                         $('#primary_user_personel_care_gender1').val("");
                     } else {
-                        $("#primary_user_personel_care_other").hide();
+                        $("#primary_user_personel_care_gender_other").hide();
                         $("#primary_user_personel_care_gender").removeAttr('name');
                         if (gen == '1') {
                             $('#primary_user_personel_care_gender1').val('<?php echo $g; ?>');
@@ -4231,7 +4231,7 @@ $g = isset($_GET['g']) ? $_GET['g'] : '';
                 </div>
 
                 <div  class="content_14_n" style="width: 995px;" id="laptop_primary_user_div" style="display:none;">
-                    <span class="content_l4_n_span" style="width:57%;float: left">Who would be the primary user of this Laptop, Computer (Desktop)?</span>
+                    <span class="content_l4_n_span" style="width:57%;float: left;color:#626262;">Who would be the primary user of this Laptop, Computer (Desktop)?</span>
                     <div style="margin-right: 20px;float: left">
                         <?php AddDropDown("primary_user.xml", "primary_user_laptop", "style_dd", "Select", "", "", "1"); ?>
                         <input type="hidden" value="" id="primary_user_laptop_gender1"/>
@@ -4244,7 +4244,7 @@ $g = isset($_GET['g']) ? $_GET['g'] : '';
                 </div>
 
                 <div  class="content_14_n" style="width: 995px;" id="mobile_primary_user_div" style="display:none;">
-                    <span class="content_l4_n_span" style="width:57%;float: left">Who would be the primary user of this Mobile Phone?</span>
+                    <span class="content_l4_n_span" style="width:57%;float: left;color:#626262;">Who would be the primary user of this Mobile Phone?</span>
                     <div style="margin-right: 20px;float: left">
                         <?php AddDropDown("primary_user.xml", "primary_user_mobile", "style_dd", "Select", "", "", "1"); ?>
                         <input type="hidden" value="" id="primary_user_mobile_gender1"/>
@@ -4257,7 +4257,7 @@ $g = isset($_GET['g']) ? $_GET['g'] : '';
                 </div>
 
                 <div  class="content_14_n" style="width: 995px;" id="tv_primary_user_div" style="display:none;">
-                    <span class="content_l4_n_span" style="width:57%;float: left">Who would be the primary user of this Television (LCD/LED/3D)?</span>
+                    <span class="content_l4_n_span" style="width:57%;float: left;color:#626262;">Who would be the primary user of this Television (LCD/LED/3D)?</span>
                     <div style="margin-right: 20px;float: left">
                         <?php AddDropDown("primary_user.xml", "primary_user_tv", "style_dd", "Select", "", "", "1"); ?>
                         <input type="hidden" value="" id="primary_user_tv_gender1"/>
@@ -4269,7 +4269,7 @@ $g = isset($_GET['g']) ? $_GET['g'] : '';
                 </div>
 
                 <div  class="content_14_n" style="width: 995px;" id="kitchen_primary_user_div" style="display:none;">
-                    <span class="content_l4_n_span" style="width:57%;float: left">Who would be the primary user of this Kitchen Appliances (Microwave, Mixer, Juicer, Water Purifier, Air Fryer, etc)?</span>
+                    <span class="content_l4_n_span" style="width:57%;float: left;color:#626262;">Who would be the primary user of this Kitchen Appliances (Microwave, Mixer, Juicer, Water Purifier, Air Fryer, etc)?</span>
                     <div style="margin-right: 20px;float: left">
                         <?php AddDropDown("primary_user.xml", "primary_user_kitchen", "style_dd", "Select", "", "", "1"); ?>
                         <input type="hidden" value="" id="primary_user_kitchen_gender1"/>
@@ -4283,7 +4283,7 @@ $g = isset($_GET['g']) ? $_GET['g'] : '';
 
 
                 <div  class="content_14_n" style="width: 995px;" id="large_appliance_primary_user_div" style="display:none;">
-                    <span class="content_l4_n_span" style="width:57%;float: left">Who would be the primary user of this Large Appliances (Refrigerator, Air Conditioning (AC),Washing Machine )?</span>
+                    <span class="content_l4_n_span" style="width:57%;float: left;color:#626262;">Who would be the primary user of this Large Appliances (Refrigerator, Air Conditioning (AC),Washing Machine )?</span>
                     <div style="margin-right: 20px;float: left">
                         <?php AddDropDown("primary_user.xml", "primary_user_large_appliance", "style_dd", "Select", "", "", "1"); ?>
                         <input type="hidden" value="" id="primary_user_large_appliance_gender1"/>
@@ -4296,7 +4296,7 @@ $g = isset($_GET['g']) ? $_GET['g'] : '';
                 </div>
 
                 <div  class="content_14_n" style="width: 995px;" id="personel_care_primary_user_div" style="display:none;">
-                    <span class="content_l4_n_span" style="width:57%;float: left">Who would be the primary user of this Personal Care Appliances (Electric shavers, Trimmers, Hair Dryers, etc.)?</span>
+                    <span class="content_l4_n_span" style="width:57%;float: left;color:#626262;">Who would be the primary user of this Personal Care Appliances (Electric shavers, Trimmers, Hair Dryers, etc.)?</span>
                     <div style="margin-right: 20px;float: left">
                         <?php AddDropDown("primary_user.xml", "primary_user_personel_care", "style_dd", "Select", "", "", "1"); ?>
                         <input type="hidden" value="" id="primary_user_personel_care_gender1"/>
