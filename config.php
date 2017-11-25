@@ -7,7 +7,7 @@ if(file_exists("localconf.php"))
 }
 else
 {
-  $objConn = mysql_connect('localhost','root','');
+  $objConn = mysql_connect('localhost','ambuj','D^8tGUe4%^&');
 	define("REDIRECT_PATH","http://juxt360.com/shopping");
 }
 if(!$objConn)
@@ -15,7 +15,7 @@ if(!$objConn)
 die("Unable to connect to server ");
 	exit;
 }
-mysql_select_db('new_survey', $objConn);
+mysql_select_db('ambuj_test', $objConn);
 ?>
 
 <?php
